@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="home_team">CyberTitans</string>
+    <string name="opponent_team">Challenger</string>
+    <string name="power_upLabel">Power-Ups</string>
+    <string name="switch_label">Switch Points</string>
+    <string name="climb_label">Climb Bonus</string>
+    <string name="reset_button_label">Reset Score</string>
+    <string name="points">0</string>
 </resources>
