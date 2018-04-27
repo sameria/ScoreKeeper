@@ -10,9 +10,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Initialize Variables
      */
-    int scoreTeamA = 0;
-    int scoreTeamB = 0;
-    int resetScore = 0;
+    private int scoreTeamA = 0;
+    private int scoreTeamB = 0;
+    private int resetScore = 0;
 
     /**
      * Displays the given score for Team A.
@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given score for Team B.
      */
@@ -29,14 +28,11 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     /**
      * Increase the score by 50 points for Climb Bonus.
      */
@@ -44,12 +40,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 50;
         displayForTeamA(scoreTeamA);
     }
-
     public void climbBonusTeamB(View v) {
         scoreTeamB = scoreTeamB + 50;
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Increase the score by 10 points for Switch Goals.
      */
@@ -57,12 +51,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 10;
         displayForTeamA(scoreTeamA);
     }
-
     public void switchPointsTeamB(View v) {
         scoreTeamB = scoreTeamB + 10;
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Increase the score by 15 points for Completed Power-Ups.
      */
@@ -70,12 +62,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 15;
         displayForTeamA(scoreTeamA);
     }
-
     public void powerUpsTeamB(View v) {
         scoreTeamB = scoreTeamB + 15;
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Reset the score to zero.
      */
@@ -86,41 +76,3 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
